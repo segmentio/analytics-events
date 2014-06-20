@@ -1,0 +1,14 @@
+{
+  "repo": "segmentio/analytics-events",
+  "version": "0.0.1",
+  "main": "index.js",
+  "dependencies": {},
+  "development": {
+    "component/assert": "*",
+    "ianstormtaylor/to-capital-case": "*",
+    "ianstormtaylor/to-sentence-case": "*",
+    "ianstormtaylor/to-camel-case": "*",
+    "ianstormtaylor/to-no-case": "*",
+    "ianstormtaylor/to-snake-case": "*"
+  }
+}
