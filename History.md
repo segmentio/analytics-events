@@ -1,4 +1,10 @@
 
+1.2.0 / 2014-10-17
+==================
+
+ * fix: for ie
+ * Add more Ecommerce events [shawnfrench]
+
 1.1.0 / 2014-09-05
 ==================
 
