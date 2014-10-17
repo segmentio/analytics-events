@@ -13,5 +13,5 @@ module.exports = {
   viewedPromotion: /^[ _]?viewed[ _]?promotion?[ _]?$/i,
   clickedPromotion: /^[ _]?clicked[ _]?promotion?[ _]?$/i,
   viewedCheckoutStep: /^[ _]?viewed[ _]?checkout[ _]?step[ _]?$/i,
-  completedCheckoutStep: /^[ _]?completed[ _]?checkout[ _]?step[ _]?$/i,
+  completedCheckoutStep: /^[ _]?completed[ _]?checkout[ _]?step[ _]?$/i
 };
