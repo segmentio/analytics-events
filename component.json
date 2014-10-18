@@ -1,4 +1,5 @@
 {
+  "name": "analytics-events",
   "repo": "segmentio/analytics-events",
   "version": "1.0.0",
   "main": "index.js",
