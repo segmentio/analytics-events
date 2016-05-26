@@ -48,5 +48,17 @@ module.exports = {
   productShared: /^[ _]?product[ _]?shared[ _]?$/i,
   cartShared: /^[ _]?cart[ _]?shared[ _]?$/i,
   // Reviewing
-  productRemoved: /^[ _]?product[ _]?removed[ _]?$/i
+  productRemoved: /^[ _]?product[ _]?removed[ _]?$/i,
+  // App Lifecycle
+  applicationInstalled: /^[ _]?application[ _]?installed[ _]?$/i,
+  applicationUpdated: /^[ _]?application[ _]?updated[ _]?$/i,
+  applicationOpened: /^[ _]?application[ _]?opened[ _]?$/i,
+  applicationBackgrounded: /^[ _]?application[ _]?backgrounded[ _]?$/i,
+  applicationUninstalled: /^[ _]?application[ _]?uninstalled[ _]?$/i,
+  // App Campaign and Referral Events
+  installAttributed: /^[ _]?install[ _]?attributed[ _]?$/i,
+  deepLinkOpened: /^[ _]?deep[ _]?link[ _]?opened[ _]?$/i,
+  pushNotificationReceived: /^[ _]?push[ _]?notification[ _]?received[ _]?$/i,
+  pushNotificationTapped: /^[ _]?push[ _]?notification[ _]?received[ _]?$/i,
+  pushNotificationBounced: /^[ _]?push[ _]?notification[ _]?bounced[ _]?$/i
 };
