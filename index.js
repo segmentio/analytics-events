@@ -30,6 +30,7 @@ module.exports = {
   orderRefunded: /^[ _]?order[ _]?refunded[ _]?$/i,
   refundedOrder: /^[ _]?refunded[ _]?order[ _]?$/i,
   orderCancelled: /^[ _]?order[ _]?cancelled[ _]?$/i,
+  paymentInfoAdded: /^[ _]?payment[ _]?info[ _]?added[ _]?$/i,
   checkoutStarted: /^[ _]?checkout[ _]?started[ _]?$/i,
   checkoutStepViewed: /^[ _]?checkout[ _]?step[ _]?viewed[ _]?$/i,
   viewedCheckoutStep: /^[ _]?viewed[ _]?checkout[ _]?step[ _]?$/i,
