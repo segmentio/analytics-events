@@ -1,21 +1,24 @@
 
-var sentence = require('to-sentence-case');
-var capital = require('to-capital-case');
-var snake = require('to-snake-case');
-var camel = require('to-camel-case');
-var nocase = require('to-no-case');
-var assert = require('assert');
+var to = require('to-case');
 var events = require('../');
 var keys = Object.keys(events);
+
+var assert; try {
+  assert = require('@segment/assert');
+} catch(e) {
+  assert = require('assert');
+}
 
 keys.forEach(function(key){
   var regexp = events[key];
 
-  test(regexp, camel(key));
-  test(regexp, nocase(key));
-  test(regexp, snake(key));
-  test(regexp, sentence(key));
-  test(regexp, capital(key));
+  console.log(regexp);
+
+  test(regexp, to.camel(key));
+  test(regexp, to.none(key));
+  test(regexp, to.snake(key));
+  test(regexp, to.sentence(key));
+  test(regexp, to.capital(key));
 
   function test(regexp, str){
     it(str + ' == ' + regexp, function(){

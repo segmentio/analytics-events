@@ -3,13 +3,12 @@
   "repo": "segmentio/analytics-events",
   "version": "1.0.0",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "ndhoule/map": "1.0.2",
+    "ndhoule/foldl": "1.0.3"
+  },
   "development": {
-    "component/assert": "*",
-    "ianstormtaylor/to-capital-case": "*",
-    "ianstormtaylor/to-sentence-case": "*",
-    "ianstormtaylor/to-camel-case": "*",
-    "ianstormtaylor/to-no-case": "*",
-    "ianstormtaylor/to-snake-case": "*"
+    "segmentio/assert": "0.5.4",
+    "ianstormtaylor/to-case": "1.0.2"
   }
 }
