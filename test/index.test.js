@@ -1,18 +1,12 @@
+'use strict';
 
 var to = require('to-case');
-var events = require('../');
+var events = require('../lib');
 var keys = Object.keys(events);
+var assert = require('proclaim');
 
-var assert; try {
-  assert = require('@segment/assert');
-} catch(e) {
-  assert = require('assert');
-}
-
-keys.forEach(function(key){
+keys.forEach(function(key) {
   var regexp = events[key];
-
-  console.log(regexp);
 
   test(regexp, to.camel(key));
   test(regexp, to.none(key));
@@ -20,9 +14,9 @@ keys.forEach(function(key){
   test(regexp, to.sentence(key));
   test(regexp, to.capital(key));
 
-  function test(regexp, str){
-    it(str + ' == ' + regexp, function(){
+  function test(regexp, str) {
+    it(str + ' == ' + regexp, function() {
       assert(regexp.test(str), str + ' != ' + regexp);
-    })
+    });
   }
-})
+});

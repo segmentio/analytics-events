@@ -3,12 +3,9 @@
   "repo": "segmentio/analytics-events",
   "version": "1.0.0",
   "main": "index.js",
-  "dependencies": {
-    "ndhoule/map": "1.0.2",
-    "ndhoule/foldl": "1.0.3"
-  },
+  "dependencies": {},
   "development": {
-    "segmentio/assert": "0.5.4",
-    "ianstormtaylor/to-case": "1.0.2"
+    "rowanmanning/proclaim": "^3.4.1",
+    "ianstormtaylor/to-case": "^1.0.2"
   }
 }
