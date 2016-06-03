@@ -1,11 +1,13 @@
 'use strict';
 
 var to = require('to-case');
+var each = require('@ndhoule/each');
 var events = require('../lib');
-var keys = Object.keys(events);
+var objectKeys = require('@ndhoule/keys');
+var keys = objectKeys(events);
 var assert = require('proclaim');
 
-keys.forEach(function(key) {
+each(function(key) {
   var regexp = events[key];
 
   test(regexp, to.camel(key));
@@ -19,4 +21,4 @@ keys.forEach(function(key) {
       assert(regexp.test(str), str + ' != ' + regexp);
     });
   }
-});
+}, keys);
