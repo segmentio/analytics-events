@@ -6,6 +6,10 @@
   "dependencies": {},
   "development": {
     "rowanmanning/proclaim": "^3.4.1",
-    "ianstormtaylor/to-case": "^1.0.2"
+    "to-camel-case": "^1.0.0",
+    "to-capital-case": "^1.0.0",
+    "to-no-case": "^1.0.1",
+    "to-sentence-case": "^1.0.0",
+    "to-snake-case": "^1.0.0"
   }
 }
