@@ -1,13 +1,18 @@
+2.0.2 / 2016-06-05
+==================
+
+ * Fix ProductViewed Semantic Event [wcjohnson11]
+
 2.0.1 / 2016-06-03
 ==================
 
- * Re-add main entrypoint in package.json
+ * Re-add main entrypoint in package.json [wcjohnson11]
 
 
 2.0.0 / 2016-06-03
 ==================
 
- * Refactor for increased maintainability
+ * Refactor for increased maintainability [wcjohnson11]
 
 1.5.0 / 2016-05-26
 ==================
