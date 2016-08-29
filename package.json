@@ -3,6 +3,8 @@
   "main": "lib/index.js",
   "version": "2.0.2",
   "dependencies": {
+    "@ndhoule/foldl": "^2.0.1",
+    "@ndhoule/map": "^2.0.1"
   },
   "devDependencies": {
     "change-case": "^2.3.1",
