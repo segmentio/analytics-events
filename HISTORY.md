@@ -1,3 +1,10 @@
+2.0.3 / 2016-08-30
+==================
+
+ * Add ProductReviewed [hankim813]
+ * Fix PaymentInfoEntered
+ * Fix ProductAddedFromWishlistToCart
+
 2.0.2 / 2016-06-05
 ==================
 
