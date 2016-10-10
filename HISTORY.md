@@ -1,3 +1,9 @@
+
+2.0.5 / 2016-08-31
+==================
+
+ * Update PaymentInfoAdded to PaymentInfoEntered [hankim813]
+
 2.0.4 / 2016-08-31
 ==================
 
