@@ -1,3 +1,9 @@
+2.2.0 / 2018-01-03
+==================
+
+* Remove Browser tests (workaround to circle tests failing but local tests passing)
+* Add parity to docs
+
 
 2.1.0 / 2017-03-21
 ==================
