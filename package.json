@@ -13,7 +13,7 @@
     "browserify": "^13.0.0",
     "browserify-istanbul": "^2.0.0",
     "change-case": "^2.3.1",
-    "codecov": "^3.0.2",
+    "codecov": "^3.6.5",
     "component-each": "^0.2.6",
     "eslint": "^2.9.0",
     "eslint-plugin-mocha": "^2.2.0",
