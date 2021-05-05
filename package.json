@@ -1,7 +1,7 @@
 {
   "name": "analytics-events",
   "main": "lib/index.js",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "dependencies": {
     "@ndhoule/foldl": "^2.0.1",
     "@ndhoule/map": "^2.0.1"
