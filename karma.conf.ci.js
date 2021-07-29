@@ -18,6 +18,8 @@ module.exports = function(config) {
 
     browsers: ['PhantomJS'].concat(Object.keys(customLaunchers)),
 
+    browserNoActivityTimeout: 30000, // These tests seem to occasionally stall for a bit, causing it to disconnect
+
     customLaunchers: customLaunchers,
 
     sauceLabs: {

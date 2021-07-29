@@ -3,21 +3,28 @@
 var changeCase = require('change-case');
 var each = require('@ndhoule/each');
 var events = require('../lib');
-var objectKeys = require('@ndhoule/keys');
-var keys = objectKeys(events);
 var assert = require('proclaim');
 
-each(function(key) {
-  var regexp = events[key];
+var transforms = [
+  changeCase.snake,
+  changeCase.camel,
+  changeCase.sentence,
+  changeCase.title
+];
 
-  test(regexp, changeCase.camel(key));
-  test(regexp, changeCase.snake(key));
-  test(regexp, changeCase.sentence(key));
-  test(regexp, changeCase.title(key));
+each(function(regexp, event) {
+  each(function(transform) {
+    test(regexp, transform(event), true);
+    test(regexp, transform(event + 'test'), false);
+    test(regexp, transform('test' + event), false);
+  }, transforms);
 
-  function test(regexp, str) {
+  function test(regexp, str, shouldMatch) {
     it(str + ' == ' + regexp, function() {
-      assert(regexp.test(str), str + ' != ' + regexp);
+      assert(
+        regexp.test(str) === shouldMatch,
+        str + (shouldMatch ? ' != ' : ' == ') + regexp
+      );
     });
   }
-}, keys);
+}, events);
